@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* Mantém o topo no mesmo tom creme do banner. */
+/*-----navbar----*/
 .topo {
     background-color: #ffffff;
     display: grid;
@@ -62,6 +63,7 @@ nav {
     color: #ffffff;
 }
 
+/*----banner------*/
 .inicio {
     align-items: center;
     display: grid;
@@ -103,6 +105,7 @@ nav {
     box-shadow: 0 8px 24px #5427111a;
 }
 
+/*------botões----*/
 .botao {
     background-color: #ff7b00;
     border-radius: 24px;
@@ -117,6 +120,7 @@ nav {
     background-color: #70290d;
 }
 
+/*----categorias-------*/
 .secao-produtos {
     margin: 0 auto;
     max-width: 1200px;
@@ -184,6 +188,7 @@ nav {
 
 
 
+/*----serviços-------*/
 .servicos {
     background-color: #542711;
     color: #fffaf3;
@@ -248,6 +253,7 @@ nav {
     background-color: #ffd18d;
 }
 
+/*----rodapé----*/
 footer {
     background-color: #28150e;
     color: #fffaf3;
@@ -292,6 +298,7 @@ footer a {
     text-align: center;
 }
 
+/*----coiso para cllr e tablet----*/
 @media (max-width: 850px) {
     .inicio {
         gap: 30px;

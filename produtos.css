@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,6 +13,7 @@ body {
     line-height: 1.6;
 }
 
+/*----navbar-----------*/
 .topo {
     align-items: center;
     background-color: #ffffff;
@@ -60,6 +62,7 @@ nav {
     color: #ffffff;
 }
 
+/*----introduçã-----------*/
 .catalogo {
     margin: 0 auto;
     max-width: 1200px;
@@ -92,6 +95,7 @@ nav {
     text-align: center;
 }
 
+/*-----------atalhos de categorias----*/
 .atalhos-categorias {
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +106,6 @@ nav {
 
 .atalhos-categorias a {
     background-color: #ffe2a8;
-    border: 1px solid #f3b343;
     border-radius: 22px;
     color: #71320f;
     font-size: 14px;
@@ -117,6 +120,7 @@ nav {
     color: #ffffff;
 }
 
+/*----cards de produtos---------*/
 .grupo-produtos {
     margin-bottom: 42px;
 }
@@ -137,7 +141,7 @@ nav {
 
 .produto-card {
     background-color: #ffffff;
-    border: 1px solid #e7c39a;
+    border: 3px solid #ffcd93;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -173,6 +177,7 @@ nav {
     margin-top: 6px;
 }
 
+/*------botão do zap zap----*/
 .botao-whatsapp {
     background-color: #f57c00;
     border: none;
@@ -200,6 +205,7 @@ nav {
     text-align: center;
 }
 
+/*----rodapé----*/
 .rodape {
     background-color: #4b210d;
     color: #fff8ed;
@@ -208,6 +214,7 @@ nav {
     text-align: center;
 }
 
+/*----celular e tableet----*/
 @media (max-width: 1000px) {
     .lista-produtos {
         grid-template-columns: repeat(3, 1fr);

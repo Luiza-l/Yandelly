@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,12 +6,13 @@
 }
 
 body {
-    background-color: #fff8ed;
+    background-color: #ffdda5;
     color: #3d2116;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+
 }
 
+/*----navbar-----*/
 .topo {
     align-items: center;
     background-color: #ffffff;
@@ -59,6 +61,7 @@ nav {
     color: #ffffff;
 }
 
+/*----história----*/
 .pagina-historia {
     margin: 0 auto;
     max-width: 1100px;
@@ -113,6 +116,7 @@ nav {
     object-fit: contain;
 }
 
+/*----rodapé----*/
 .rodape {
     background-color: #4b210d;
     color: #fff8ed;
@@ -120,6 +124,7 @@ nav {
     text-align: center;
 }
 
+/*----telas menores----*/
 @media (max-width: 700px) {
     .topo {
         display: flex;

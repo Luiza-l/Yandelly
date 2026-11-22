@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,12 +6,12 @@
 }
 
 body {
-    background-color: #fff8ed;
+    background-color: #ffdda5;
     color: #3d2116;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
 }
 
+/*-----navba----*/
 .topo {
     align-items: center;
     background-color: #ffffff;
@@ -19,7 +20,6 @@ body {
     grid-template-columns: 1fr auto 1fr;
     justify-content: space-between;
     padding: 8px 6%;
-    position: sticky;
     top: 0;
     z-index: 10;
 }
@@ -59,6 +59,7 @@ nav {
     color: #ffffff;
 }
 
+/*----contato----*/
 .pagina-contato {
     margin: 0 auto;
     max-width: 1000px;
@@ -121,7 +122,7 @@ nav {
 }
 
 .informacao-entrega {
-    background-color: #ffe2a8;
+    background-color: #fffbca;
     border-radius: 10px;
     margin-top: 24px;
     padding: 22px;
@@ -134,6 +135,7 @@ nav {
     margin-top: 12px;
 }
 
+/*----rodapé------*/
 .rodape {
     background-color: #4b210d;
     color: #fff8ed;
@@ -141,6 +143,7 @@ nav {
     text-align: center;
 }
 
+/*----celular e tablet----*/
 @media (max-width: 700px) {
     .topo {
         display: flex;
