@@ -171,6 +171,10 @@ nav {
     width: 120px;
 }
 
+.categoria-foto:hover{
+    background-color: #ff7b00;
+    transition: all 0.5s;
+}
 .categoria-nome {
     background-color: #c94735;
     border-radius: 18px;
@@ -182,6 +186,10 @@ nav {
     text-align: center;
 }
 
+.categoria-link:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
 .categoria-link:hover .categoria-nome {
     background-color: #ff7b00;
 }
@@ -257,35 +265,33 @@ nav {
 footer {
     background-color: #28150e;
     color: #fffaf3;
-    padding: 38px 6% 16px;
+    padding: 30px 6% 16px;
+    text-align: center;
+}
+
+.logo-rodape {
+    display: block;
+    height: auto;
+    margin: 0 auto 8px;
+    max-width: 100%;
+    width: 190px;
+}
+
+.frase-rodape {
+    color: #ffd18d;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.informacoes-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    justify-content: center;
 }
 
 footer a {
     color: #ffd18d;
-}
-
-.rodape-conteudo {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    max-width: 1100px;
-}
-
-.rodape-conteudo h2 {
-    color: #ffd18d;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.contatos p {
-    margin: 4px 0;
-}
-
-.convite {
-    color: #ffd18d;
-    font-weight: bold;
-    margin-top: 12px !important;
 }
 
 .copyright {
@@ -407,7 +413,4 @@ footer a {
         width: 180px;
     }
 
-    .rodape-conteudo {
-        grid-template-columns: 1fr;
-    }
 }

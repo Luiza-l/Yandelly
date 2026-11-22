@@ -12,7 +12,7 @@ body {
 
 }
 
-/*----navbar-----*/
+/*----navbar------*/
 .topo {
     align-items: center;
     background-color: #ffffff;
@@ -64,7 +64,7 @@ nav {
 /*----história----*/
 .pagina-historia {
     margin: 0 auto;
-    max-width: 1100px;
+    width: 1100px;
     padding: 42px 6%;
 }
 
@@ -83,7 +83,6 @@ nav {
 .bloco-historia {
     align-items: center;
     background-color: #ffffff;
-    border: 1px solid #e7c39a;
     border-radius: 10px;
     display: grid;
     gap: 28px;
@@ -118,10 +117,44 @@ nav {
 
 /*----rodapé----*/
 .rodape {
-    background-color: #4b210d;
+    background-color: #28150e;
     color: #fff8ed;
-    padding: 20px 6%;
+    padding: 30px 6% 16px;
     text-align: center;
+}
+
+.logo-rodape {
+    display: block;
+    height: auto;
+    margin: 0 auto 8px;
+    max-width: 100%;
+    width: 190px;
+}
+
+.frase-rodape {
+    color: #ffd18d;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.informacoes-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    justify-content: center;
+}
+
+.rodape a {
+    color: #ffd18d;
+}
+
+.copyright {
+    border-top: 1px solid #ffffff33;
+    color: #e5d5c9;
+    font-size: 13px;
+    margin: 24px auto 0;
+    max-width: 1100px;
+    padding-top: 12px;
 }
 
 /*----telas menores----*/
