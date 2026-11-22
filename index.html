@@ -1,70 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os salgadinhos, doces e guloseimas da Yandelly Distribuidora.">
+    <link rel="shortcut icon" href="imagens/logo-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Yandelly Distribuidora | Doces e Snacks</title>
 </head>
-
 <body>
+    <header class="topo">
+        <a href="index.html#inicio" class="logo-link">
+            <img src="imagens/logo.png" alt="Yandelly Distribuidora" id="logo">
+        </a>
 
-  <header>
-    <a href="index.html" class="logo-link"><img src="imagens/Logo Yanelly Distribuidora com Coroa.webp" alt=""
-        id="logo"></a>
-    <nav>
-      <a href="./index.html" class="link-nav">Início</a>
-      <a href="./" class="link-nav">Produtos</a>
-      <a href="./sobrenos.html" class="link-nav">Sobre nós</a>
-      <a href="./" class="link-nav">Contatos</a>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <img src="./imagens/Banner Yandelly_ Doces e Snacks.webp" id="banner">
-    </section>
+        <nav>
+            <a href="index.html#inicio" class="link-nav">Início</a>
+            <a href="produtos.html" class="link-nav">Produtos</a>
+            <a href="sobrenos.html" class="link-nav">Nossa história</a>
+            <a href="contato.html" class="link-nav">Contato</a>
+        </nav>
+    </header>
 
-    <div class="container">
-      <section id="categorias">
-        <h2 id="titulo-categorias">Nossos produtos</h2>
+    <main>
+        <section class="inicio" id="inicio">
+            <div class="texto-inicio">
+                <h1>Mais sabor para cada momento</h1>
+                <p class="descricao-inicio">Encontre seus produtos favoritos e leve mais alegria para sua casa ou para o seu negócio.</p>
+                <a href="produtos.html" class="botao">Conheça nossos produtos</a>
+            </div>
 
-        <ul class="categorias">
-          <li>
-            <span class="icone"></span>
-            <span class="nome">Salgadinhos</span>
-          </li>
-          <li>
-            <span class="icone"></span>
-            <span class="nome">Doces</span>
-          </li>
-          <li>
-            <span class="icone"></span>
-            <span class="nome">Paçoca</span>
-          </li>
-          <li>
-            <span class="icone"></span>
-            <span class="nome">Cocada</span>
-          </li>
-          <li>
-            <span class="icone"></span>
-            <span class="nome">Biscoitos</span>
-          </li>
-        </ul>
-      </section>
+            <div class="imagem-inicio">
+                <img src="imagens/Pote de Chocolate em Fundo Vibrante.png" alt="Pote de fondant de leite com chocolate da Yandelly">
+            </div>
+        </section>
 
+        <section class="secao-produtos" id="produtos">
+            <div class="titulo-secao">
+                <h2>Nossos produtos</h2>
+                <p>Encontre opções deliciosas para compartilhar, presentear ou revender.</p>
+            </div>
 
-      <section>
-        <article id="ofertas">
-          a
-        </article>
-      </section>
-  </main>
-  <footer>
+            <ul class="categorias">
+                <li>
+                    <a class="categoria-link" href="produtos.html#salgadinhos">
+                        <img class="categoria-foto" src="imagens/yandelly-bacon.png" alt="Salgadinho de trigo sabor bacon">
+                        <span class="categoria-nome">Salgadinhos e Snacks</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="categoria-link" href="produtos.html#amendoim">
+                        <img class="categoria-foto" src="imagens/Pote de Pé de Moleque Mendonça Sweets.png" alt="Pote de pé de moleque">
+                        <span class="categoria-nome">Doces de Amendoim</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="categoria-link" href="produtos.html#confeitos">
+                        <span class="categoria-nome">Doces e Confeitos</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="categoria-link" href="produtos.html#frutas">
+                        <span class="categoria-nome">Geleias e Doces de Frutas</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
 
-  </footer>
+        <section class="servicos" id="servicos">
+            <div class="servicos-conteudo">
+                <div class="imagem-empresa">
+                    <img src="imagens/logo-desenho.png" alt="Ilustração que representa a marca Yandelly">
+                </div>
+                <div class="texto-servicos">
+                    <h2>Produtos para sua loja ou para aproveitar em casa</h2>
+                    <p>A Yandelly atende lojas e pequenos negócios com salgadinhos, doces e guloseimas para revenda. Consulte nossas opções e condições de compra no atacado.</p>
+                    <p>Também vendemos no varejo para quem quer levar seus sabores favoritos para casa. E para facilitar o abastecimento do seu negócio, fazemos entregas para lojas.</p>
+                    <p class="frase-venda">Abasteça sua loja ou escolha suas guloseimas preferidas. Fale com a gente para consultar disponibilidade, valores e condições de entrega.</p>
+                    <a href="contato.html" class="botao botao-claro">Fale com a gente</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <script src="main.js"></script>
+    <footer id="contato">
+        <div class="rodape-conteudo">
+            <div>
+                <h2>Yandelly Distribuidora</h2>
+                <p>Doces, salgadinhos e guloseimas para deixar cada momento mais gostoso.</p>
+            </div>
+            <div class="contatos">
+                <h2>Entre em contato</h2>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511967853094">(11) 96785-3094</a></p>
+                <p><strong>E-mail:</strong> <a href="mailto:contatoyandelly@yahoo.com">contatoyandelly@yahoo.com</a></p>
+                <p class="convite">Peça nosso catálogo e descubra seus novos favoritos!</p>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Yandelly Distribuidora. Todos os direitos reservados.</p>
+    </footer>
 </body>
-
 </html>

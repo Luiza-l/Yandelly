@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os produtos da Yandelly Distribuidora.">
+    <link rel="shortcut icon" href="imagens/logo-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="produtos.css">
+    <title>Yandelly</title>
+</head>
+<body>
+    <header class="topo">
+        <a href="index.html" class="logo-link">
+            <img src="imagens/logo.png" alt="Yandelly Distribuidora" id="logo">
+        </a>
+
+        <nav>
+            <a href="index.html#inicio" class="link-nav">Início</a>
+            <a href="produtos.html" class="link-nav">Produtos</a>
+            <a href="sobrenos.html" class="link-nav">Nossa história</a>
+            <a href="contato.html" class="link-nav">Contato</a>
+        </nav>
+    </header>
+
+    <main class="catalogo">
+        <section class="catalogo-intro" id="todos">
+            <h1>Produtos para todos os gostos</h1>
+            <p>Escolha uma categoria e encontre seus favoritos no catálogo da Yandelly.</p>
+        </section>
+
+        <p class="aviso-atacado">A partir de R$ 200 em itens, os preços ficam no atacado.</p>
+
+        <nav class="atalhos-categorias">
+            <a href="#todos">Todos os produtos</a>
+            <a href="#salgadinhos">Salgadinhos e Snacks</a>
+            <a href="#amendoim">Doces de Amendoim</a>
+            <a href="#confeitos">Doces e Confeitos</a>
+            <a href="#frutas">Geleias e Doces de Frutas</a>
+        </nav>
+
+        <section class="grupo-produtos" id="salgadinhos">
+            <h2>Salgadinhos e Snacks</h2>
+            <div class="lista-produtos">
+                <article class="produto-card">
+                    <img class="produto-imagem" src="imagens/yandelly-bacon.png" alt="Pacote de salgadinho de trigo sabor bacon da Yandelly">
+                    <div class="produto-info">
+                        <h3>Salgadinho de trigo sabor Bacon</h3>
+                        <p>Fardo com 20 unidades de 60 g</p>
+                        <p class="preco">R$ 35,00</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Salgadinho de trigo sabor Bacon')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+                <article class="produto-card">
+                    <img class="produto-imagem" src="imagens/tiba-pimenta.png" alt="Pacote de salgadinho de trigo sabor pimenta mexicana">
+                    <div class="produto-info">
+                        <h3>Salgadinho de trigo sabor Pimenta Mexicana</h3>
+                        <p>Fardo com 20 unidades de 60 g</p>
+                        <p class="preco">R$ 35,00</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Salgadinho de trigo sabor Pimenta Mexicana')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+                <article class="produto-card">
+                    <img class="produto-imagem" src="imagens/chiang.jfif" alt="Pacote de biscoito de polvilho original Chiang">
+                    <div class="produto-info">
+                        <h3>Biscoito de Polvilho Original</h3>
+                        <p>Fardo com 20 unidades de 80 g</p>
+                        <p class="preco">R$ 55,00</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Biscoito de Polvilho Original')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="grupo-produtos" id="amendoim">
+            <h2>Doces de Amendoim</h2>
+            <div class="lista-produtos">
+                <article class="produto-card">
+                    <img class="produto-imagem" src="imagens/refil-pacoca-rolha.png" alt="Pacote de refil de paçoca rolha">
+                    <div class="produto-info">
+                        <h3>Refil Paçoca Rolha</h3>
+                        <p>Pacote com 20 unidades</p>
+                        <p class="preco">R$ 18,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Paçoca Rolha')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+                <article class="produto-card">
+                    <img class="produto-imagem" src="imagens/refil-pacocaoo.png" alt="Pacote de refil de paçocão">
+                    <div class="produto-info">
+                        <h3>Refil Paçocão</h3>
+                        <p>Pacote com 20 unidades</p>
+                        <p class="preco">R$ 18,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Paçocão')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+                <article class="produto-card">
+                    <div class="produto-imagem"></div>
+                    <div class="produto-info">
+                        <h3>Refil Pé de Moça</h3>
+                        <p>Pacote com 20 unidades</p>
+                        <p class="preco">R$ 18,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Pé de Moça')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+                <article class="produto-card">
+                    <div class="produto-imagem"></div>
+                    <div class="produto-info">
+                        <h3>Refil Pé de Moleque</h3>
+                        <p>Pacote com 20 unidades</p>
+                        <p class="preco">R$ 18,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Pé de Moleque')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="grupo-produtos" id="confeitos">
+            <h2>Doces e Confeitos</h2>
+            <div class="lista-produtos">
+                <article class="produto-card">
+                    <div class="produto-imagem"></div>
+                    <div class="produto-info">
+                        <h3>Fondant Pingo de Leite</h3>
+                        <p>Pote com 20 unidades</p>
+                        <p class="preco">R$ 29,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Fondant Pingo de Leite')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+                <article class="produto-card">
+                    <div class="produto-imagem"></div>
+                    <div class="produto-info">
+                        <h3>Cocada Mista</h3>
+                        <p>Pote com 20 unidades</p>
+                        <p class="preco">R$ 29,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Cocada Mista')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+                <article class="produto-card">
+                    <div class="produto-imagem"></div>
+                    <div class="produto-info">
+                        <h3>Torrone</h3>
+                        <p>Pote com 20 unidades</p>
+                        <p class="preco">R$ 20,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Torrone')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+                <article class="produto-card">
+                    <div class="produto-imagem"></div>
+                    <div class="produto-info">
+                        <h3>Quebra-queixo</h3>
+                        <p>Pote com 20 unidades</p>
+                        <p class="preco">R$ 29,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Quebra-queixo')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="grupo-produtos" id="frutas">
+            <h2>Geleias e Doces de Frutas</h2>
+            <div class="lista-produtos">
+                <article class="produto-card">
+                    <div class="produto-imagem"></div>
+                    <div class="produto-info">
+                        <h3>Refil Geleia de Banana</h3>
+                        <p>Pacote com 20 unidades</p>
+                        <p class="preco">R$ 18,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Geleia de Banana')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+                <article class="produto-card">
+                    <div class="produto-imagem"></div>
+                    <div class="produto-info">
+                        <h3>Geleia de Frutas</h3>
+                        <p>Pote com 20 unidades</p>
+                        <p class="preco">R$ 20,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Geleia de Frutas')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+                <article class="produto-card">
+                    <div class="produto-imagem"></div>
+                    <div class="produto-info">
+                        <h3>Geleia de Banana</h3>
+                        <p>Pote com 20 unidades</p>
+                        <p class="preco">R$ 20,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Geleia de Banana')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+                <article class="produto-card">
+                    <div class="produto-imagem"></div>
+                    <div class="produto-info">
+                        <h3>Doce AB Misto</h3>
+                        <p>Pote com 20 unidades</p>
+                        <p class="preco">R$ 20,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Doce AB Misto')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+                <article class="produto-card">
+                    <div class="produto-imagem"></div>
+                    <div class="produto-info">
+                        <h3>Doce AB Vermelho</h3>
+                        <p>Pote com 20 unidades</p>
+                        <p class="preco">R$ 20,90</p>
+                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Doce AB Vermelho')">Consultar pelo WhatsApp</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <p class="aviso-catalogo">Preços e embalagens conforme o catálogo de atacado. Consulte a disponibilidade e os valores atualizados pelo contato da loja.</p>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Yandelly Distribuidora. Todos os direitos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
