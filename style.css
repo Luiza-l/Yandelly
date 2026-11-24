@@ -70,8 +70,10 @@ nav {
     gap: 48px;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    max-width: 1240px;
+    width: 1240px;
     padding: 58px 6%;
+    background-color: rgb(255, 227, 150) ;
+    border-radius: 18px;
 }
 
 .texto-inicio {
