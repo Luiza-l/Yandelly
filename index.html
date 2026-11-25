@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Conheça os salgadinhos, doces e guloseimas da Yandelly Distribuidora.">
     <link rel="shortcut icon" href="imagens/logo-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Yandelly</title>
 </head>
@@ -20,6 +21,10 @@
             <a href="sobrenos.html" class="link-nav">Nossa história</a>
             <a href="contato.html" class="link-nav">Contato</a>
         </nav>
+        <a class="icone-carrinho" href="produtos.html#todos" aria-label="Carrinho de compras" title="Carrinho de compras">
+            <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            <span class="contador-carrinho" id="contador-carrinho" aria-live="polite">0</span>
+        </a>
     </header>
 
     <main>
@@ -95,5 +100,6 @@
         </div>
         <p class="copyright">© 2026 Yandelly Distribuidora. Todos os direitos reservados.</p>
     </footer>
+    <script src="Javascript/main.js"></script>
 </body>
 </html>

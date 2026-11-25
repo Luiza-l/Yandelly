@@ -48,6 +48,37 @@ nav {
     justify-self: center;
 }
 
+.icone-carrinho {
+    align-items: center;
+    color: #4a2818;
+    display: flex;
+    font-size: 22px;
+    grid-column: 3;
+    justify-self: end;
+    padding: 8px;
+    text-decoration: none;
+    position: relative;
+}
+
+.contador-carrinho {
+    align-items: center;
+    background-color: #f57c00;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    font-size: 11px;
+    height: 18px;
+    justify-content: center;
+    min-width: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.icone-carrinho:hover {
+    color: #f57c00;
+}
+
 .link-nav {
     color: #4a2818;
     font-size: 16px;
@@ -177,6 +208,13 @@ nav {
     margin-top: 6px;
 }
 
+.produto-botoes {
+    align-items: stretch;
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
 /*------botão do zap zap----*/
 .botao-whatsapp {
     background-color: #f57c00;
@@ -188,13 +226,28 @@ nav {
     font-family: inherit;
     font-size: 14px;
     font-weight: bold;
-    margin-top: 12px;
     padding: 10px;
-    width: 100%;
+    width: auto;
+    flex: 1;
 }
 
 .botao-whatsapp:hover {
     background-color: #c65300;
+}
+
+.botao-carrinho {
+    background-color: #fff2dc;
+    border: 1px solid #f57c00;
+    border-radius: 6px;
+    color: #71320f;
+    cursor: pointer;
+    font-size: 17px;
+    min-width: 44px;
+    padding: 8px 12px;
+}
+
+.botao-carrinho:hover {
+    background-color: #ffe2a8;
 }
 
 .aviso-catalogo {
@@ -203,6 +256,148 @@ nav {
     color: #5f4635;
     padding: 14px 18px;
     text-align: center;
+}
+
+/* coisa do carrinho */
+.fundo-carrinho {
+    background-color: #00000066;
+    inset: 0;
+    position: fixed;
+    z-index: 20;
+}
+
+.fundo-carrinho[hidden],
+.painel-carrinho[hidden] {
+    display: none;
+}
+
+.painel-carrinho {
+    background-color: #ffffff;
+    box-shadow: -4px 0 18px #00000022;
+    height: 100vh;
+    max-width: 100%;
+    overflow-y: auto;
+    padding: 32px 24px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 430px;
+    z-index: 21;
+}
+
+.painel-carrinho h2 {
+    color: #4b210d;
+    font-size: 28px;
+    margin: 20px 0 24px;
+    text-align: center;
+}
+
+.fechar-carrinho {
+    background: none;
+    border: 0;
+    color: #3d2116;
+    cursor: pointer;
+    font-size: 34px;
+    line-height: 1;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+}
+
+.item-carrinho {
+    align-items: center;
+    border-bottom: 1px solid #e8dfd7;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 82px 1fr auto;
+    padding: 14px 0;
+}
+
+.item-carrinho img {
+    background-color: #fff8ed;
+    border-radius: 8px;
+    height: 82px;
+    object-fit: contain;
+    width: 82px;
+}
+
+.item-carrinho h3 {
+    color: #4b210d;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.item-carrinho p {
+    color: #5f4635;
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.controles-quantidade {
+    align-items: center;
+    border: 1px solid #d8cfc7;
+    border-radius: 5px;
+    display: inline-flex;
+    margin-top: 5px;
+}
+
+.controles-quantidade button,
+.remover-item {
+    background: none;
+    border: 0;
+    color: #4b210d;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 4px 9px;
+}
+
+.controles-quantidade span {
+    border-left: 1px solid #d8cfc7;
+    border-right: 1px solid #d8cfc7;
+    min-width: 32px;
+    padding: 2px 7px;
+    text-align: center;
+}
+
+.remover-item {
+    color: #8a3d18;
+    font-size: 18px;
+}
+
+.carrinho-vazio {
+    color: #5f4635;
+    padding: 28px 0;
+    text-align: center;
+}
+
+.resumo-carrinho {
+    border-top: 2px solid #cbbfb5;
+    margin-top: 20px;
+    padding-top: 14px;
+}
+
+.resumo-carrinho p {
+    align-items: center;
+    color: #3d2116;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.finalizar-carrinho {
+    background-color: #f57c00;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font: bold 15px Arial, sans-serif;
+    margin: 20px auto 0;
+    padding: 12px 18px;
+}
+
+.finalizar-carrinho:hover {
+    background-color: #c65300;
 }
 
 /*----rodapé----*/
@@ -267,6 +462,13 @@ nav {
         flex-direction: column;
         gap: 4px;
         padding: 8px 12px;
+        position: relative;
+    }
+
+    .icone-carrinho {
+        position: absolute;
+        right: 12px;
+        top: 16px;
     }
 
     .logo-link img {
@@ -294,5 +496,10 @@ nav {
 
     .lista-produtos {
         grid-template-columns: 1fr;
+    }
+
+    .painel-carrinho {
+        padding: 28px 18px;
+        width: min(100%, 430px);
     }
 }

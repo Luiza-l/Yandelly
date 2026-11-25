@@ -49,6 +49,37 @@ nav {
     justify-self: center;
 }
 
+.icone-carrinho {
+    align-items: center;
+    color: #4a2818;
+    display: flex;
+    font-size: 22px;
+    grid-column: 3;
+    justify-self: end;
+    padding: 8px;
+    text-decoration: none;
+    position: relative;
+}
+
+.contador-carrinho {
+    align-items: center;
+    background-color: #f57c00;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    font-size: 11px;
+    height: 18px;
+    justify-content: center;
+    min-width: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.icone-carrinho:hover {
+    color: #ff9100;
+}
+
 .link-nav {
     color: #4a2818;
     font-size: 16px;
@@ -70,7 +101,8 @@ nav {
     gap: 48px;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    width: 1240px;
+    max-width: 1240px;
+    width: 100%;
     padding: 58px 6%;
     background-color: rgb(255, 227, 150) ;
     border-radius: 18px;
@@ -353,6 +385,13 @@ footer a {
         flex-direction: column;
         gap: 4px;
         padding: 8px 12px;
+        position: relative;
+    }
+
+    .icone-carrinho {
+        position: absolute;
+        right: 12px;
+        top: 16px;
     }
 
     #logo {
@@ -397,7 +436,7 @@ footer a {
     }
 
     .categorias {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .servicos {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Conheça os produtos da Yandelly Distribuidora.">
     <link rel="shortcut icon" href="imagens/logo-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="produtos.css">
     <title>Yandelly</title>
 </head>
@@ -20,6 +21,10 @@
             <a href="sobrenos.html" class="link-nav">Nossa história</a>
             <a href="contato.html" class="link-nav">Contato</a>
         </nav>
+        <a class="icone-carrinho" href="#" onclick="abrirCarrinho(); return false;" aria-label="Abrir carrinho de compras" title="Carrinho de compras">
+            <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            <span class="contador-carrinho" id="contador-carrinho" aria-live="polite">0</span>
+        </a>
     </header>
 
     <main class="catalogo">
@@ -47,7 +52,10 @@
                         <h3>Salgadinho de trigo sabor Bacon</h3>
                         <p>Fardo com 20 unidades de 60 g</p>
                         <p class="preco">R$ 35,00</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Salgadinho de trigo sabor Bacon')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Salgadinho de trigo sabor Bacon')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Salgadinho de trigo sabor Bacon', 35.00, 'imagens/yandelly-bacon.png')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
                 <article class="produto-card">
@@ -56,7 +64,10 @@
                         <h3>Salgadinho de trigo sabor Pimenta Mexicana</h3>
                         <p>Fardo com 20 unidades de 60 g</p>
                         <p class="preco">R$ 35,00</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Salgadinho de trigo sabor Pimenta Mexicana')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Salgadinho de trigo sabor Pimenta Mexicana')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Salgadinho de trigo sabor Pimenta Mexicana', 35.00, 'imagens/tiba-pimenta.png')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
                 <article class="produto-card">
@@ -65,7 +76,10 @@
                         <h3>Biscoito de Polvilho Original</h3>
                         <p>Fardo com 20 unidades de 80 g</p>
                         <p class="preco">R$ 55,00</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Biscoito de Polvilho Original')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Biscoito de Polvilho Original')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Biscoito de Polvilho Original', 55.00, 'imagens/chiang.jfif')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
 
@@ -81,7 +95,10 @@
                         <h3>Refil Paçoca Rolha</h3>
                         <p>Pacote com 20 unidades</p>
                         <p class="preco">R$ 18,90</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Paçoca Rolha')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Paçoca Rolha')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Refil Paçoca Rolha', 18.90, 'imagens/refil-pacoca-rolha.png')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
                 <article class="produto-card">
@@ -90,7 +107,10 @@
                         <h3>Paçocão</h3>
                         <p>Pote com 45 unidades</p>
                         <p class="preco">R$ 18,90</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Paçocão')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Paçocão')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Paçocão', 18.90, 'imagens/pacoca-grande.png')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
                 <article class="produto-card">
@@ -99,7 +119,10 @@
                         <h3>Refil Pé de Moça</h3>
                         <p>Pacote com 20 unidades</p>
                         <p class="preco">R$ 18,90</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Pé de Moça')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Pé de Moça')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Refil Pé de Moça', 18.90, 'imagens/pe-democa.png')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
                 <article class="produto-card">
@@ -108,7 +131,10 @@
                         <h3>Refil Pé de Moleque</h3>
                         <p>Pacote com 20 unidades</p>
                         <p class="preco">R$ 18,90</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Pé de Moleque')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Pé de Moleque')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Refil Pé de Moleque', 18.90, 'imagens/refil-pe-de-moleque.png')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -123,7 +149,10 @@
                         <h3>Foundant de Leite c/ Chocolate</h3>
                         <p>Pote com 20 unidades</p>
                         <p class="preco">R$ 29,90</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Fondant Pingo de Leite')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Fondant Pingo de Leite')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Foundant de Leite c/ Chocolate', 29.90, 'imagens/found-chocolate-branco.png')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
                 <article class="produto-card">
@@ -132,7 +161,10 @@
                         <h3>Cocada Mista</h3>
                         <p>Pote com 20 unidades</p>
                         <p class="preco">R$ 29,90</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Cocada Mista')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Cocada Mista')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Cocada Mista', 29.90, 'imagens/Pote de Cocadas Mistas de Coco.webp')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
                 <article class="produto-card">
@@ -141,7 +173,10 @@
                         <h3>Torrone</h3>
                         <p>Pote com 20 unidades</p>
                         <p class="preco">R$ 20,90</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Torrone')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Torrone')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Torrone', 20.90, 'imagens/torrone.png')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
                 <article class="produto-card">
@@ -150,7 +185,10 @@
                         <h3>Foundant de Leite   </h3>
                         <p>Pote com 20 unidades</p>
                         <p class="preco">R$ 29,90</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Quebra-queixo')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Quebra-queixo')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Foundant de Leite', 29.90, 'imagens/found-leite.png')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -165,7 +203,10 @@
                         <h3>Refil Geleia de Banana</h3>
                         <p>Pacote com 20 unidades</p>
                         <p class="preco">R$ 18,90</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Geleia de Banana')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Refil Geleia de Banana')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Refil Geleia de Banana', 18.90, 'imagens/doce-banana.jfif')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
                 <article class="produto-card">
@@ -174,7 +215,10 @@
                         <h3>Geleia de Frutas</h3>
                         <p>Pote com 20 unidades</p>
                         <p class="preco">R$ 20,90</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Geleia de Frutas')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Geleia de Frutas')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Geleia de Frutas', 20.90, 'imagens/Pote de Geleia de Frutas Colorida.png')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
                 <article class="produto-card">
@@ -183,7 +227,10 @@
                         <h3>Geleia de Banana</h3>
                         <p>Pote com 20 unidades</p>
                         <p class="preco">R$ 20,90</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Geleia de Banana')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Geleia de Banana')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Geleia de Banana', 20.90, 'imagens/geleia-banana.jpeg')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
                 <article class="produto-card">
@@ -192,7 +239,10 @@
                         <h3>Doce AB Misto</h3>
                         <p>Pote com 20 unidades</p>
                         <p class="preco">R$ 20,90</p>
-                        <button class="botao-whatsapp" onclick="consultarWhatsApp('Doce AB Misto')">Consultar pelo WhatsApp</button>
+                        <div class="produto-botoes">
+                            <button class="botao-whatsapp" onclick="consultarWhatsApp('Doce AB Misto')">Consultar pelo WhatsApp</button>
+                            <button class="botao-carrinho" type="button" onclick="adicionarAoCarrinho('Doce AB Misto', 20.90, 'imagens/doce-AB.jfif')" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho"><i class="fa-solid fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -211,6 +261,16 @@
         </div>
         <p class="copyright">© 2026 Yandelly Distribuidora. Todos os direitos reservados.</p>
     </footer>
-    <script src="main.js"></script>
+    <div class="fundo-carrinho" id="fundo-carrinho" onclick="fecharCarrinho()" hidden></div>
+    <aside class="painel-carrinho" id="painel-carrinho" aria-labelledby="titulo-carrinho" aria-modal="true" role="dialog" hidden>
+        <button class="fechar-carrinho" id="fechar-carrinho" type="button" onclick="fecharCarrinho()" aria-label="Fechar carrinho">&times;</button>
+        <h2 id="titulo-carrinho">Seu carrinho</h2>
+        <div class="itens-carrinho" id="itens-carrinho"></div>
+        <div class="resumo-carrinho">
+            <p>Total <strong id="total-carrinho">R$ 0,00</strong></p>
+            <button class="finalizar-carrinho" id="finalizar-carrinho" type="button" onclick="finalizarPedido()">Finalizar pelo WhatsApp</button>
+        </div>
+    </aside>
+    <script src="Javascript/main.js"></script>
 </body>
 </html>
